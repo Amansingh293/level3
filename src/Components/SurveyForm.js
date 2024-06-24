@@ -25,7 +25,7 @@ const SurveyForm = () => {
   const fetchAdditionalQuestions = async (topic) => {
     try {
       const response = await axios.get(
-        `http://localhost:3005/questions?topic=${topic}`
+        `https://level3backend.onrender.com/questions?topic=${topic}`
       );
       setAdditionalQuestions(response.data);
       console.log(response.data);
